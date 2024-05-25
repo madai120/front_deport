@@ -1,0 +1,101 @@
+/* Remove background color from body to allow image to show through */
+body {
+    background-color: transparent;
+    margin: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+    padding: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+}
+
+.image-container {
+    position: fixed;
+    /* Fix the image to the viewport */
+    width: 100%;
+    /* Cover the entire width */
+    height: auto;
+    /* Ajustar la altura según el contenido */
+    top: 0;
+    /* Position at the top */
+    left: 0;
+    /* Position at the left */
+    overflow: hidden;
+    /* Hide any overflowing content  */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Allow image to adjust height automatically */
+    /*max-height: 100%;*/
+    /* Set maximum height to container's height */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Color transparente */
+    z-index: 1;
+    /* Asegúrate de que esté por encima de la imagen */
+}
+
+header {
+    position: relative;
+    /* Make header elements positioned relative to the body */
+    z-index: 10;
+    /* Set header elements above the image */
+    /* Rest of your header styles... */
+}
+
+.container,
+.custom-button {
+    /* Add styles for other elements to position them on top of the image */
+    position: relative;
+    z-index: 10;
+    /* Set these elements above the image */
+    /* Rest of your styles for container and button... */
+}
+
+.centered-titulo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145%, -140%);
+    color: white;
+    font-size: 5vw;
+    /* Utiliza vw para que el tamaño del texto sea relativo al ancho del viewport */
+    font-family: 'Poppins', sans-serif;
+}
+
+.centered-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(75%, -350%);
+    color: white;
+    font-size: 2vw;
+    /* Utiliza vw para que el tamaño del texto sea relativo al ancho del viewport */
+    font-family: 'Poppins', sans-serif;
+}
+
+.centered-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%, -150%);
+    width: 15vw;
+    /* Ancho del botón relativo al ancho del viewport */
+    height: auto;
+    /* Ajustar altura automáticamente */
+}
+
+.centered-button img {
+    width: 100%;
+    /* Hacer que la imagen ocupe el 100% del ancho del botón */
+    height: auto;
+    /* Ajustar altura automáticamente */
+}

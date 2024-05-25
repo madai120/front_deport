@@ -21,3 +21,5 @@ Route::get('/', function () {
 Route::get('/index', [PromotionController::class, 'ViewPromotion']);
 
 Route::get('/eventos', [PromotionController::class, 'eventos']);
+Route::get('/deportes', [PromotionController::class, 'deportes']);
+Route::get('/torneos', [PromotionController::class, 'torneos']);
