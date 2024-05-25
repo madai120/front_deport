@@ -16,14 +16,14 @@
 
     <style>
         .image-container {
-            width: 80%;
+            width: 100%; /* Cambia el ancho al 100% para que ocupe toda la pantalla */
             margin: 0 auto;
             position: relative;
         }
 
         .image-container img {
-            width: 100%;
-            height: auto;
+            width: 100%; /* Hacer la imagen responsiva */
+            height: auto; /* Permitir que la altura se ajuste automáticamente */
             object-fit: cover;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
@@ -41,13 +41,6 @@
             cursor: pointer;
             border: none;
             z-index: 10;
-        }
-
-        @media (max-width: 769px) {
-            /* Oculta la imagen principal cuando el ancho de la pantalla sea menor a 770px */
-            .image-container {
-                display: none;
-            }
         }
     </style>
 </head>
