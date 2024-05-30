@@ -1,6 +1,6 @@
 /* Remove background color from body to allow image to show through */
 body {
-    background-color: #2EC4B6;
+    background-color: #011627;
     margin: 0;
     /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
     padding: 0;
@@ -54,11 +54,27 @@ header {
 }
 
 .dot-inactive {
-    background-color: #011627;
+    background-color: #2EC4B6;
 }
 
 .dot-active {
     background-color: #E71D36;
     /* Dorado para el punto activo */
-    border: 2px solid #011627;
+    border: 2px solid #2EC4B6;
+}
+
+.description {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
