@@ -96,7 +96,7 @@
 
 
     <script src="js/welcome.js"></script>
-    <script src="js/eventos.js"></script>
+    <script src="js/torneos.js"></script>
 </body>
 
 </html>
