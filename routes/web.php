@@ -18,8 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index', [PromotionController::class, 'ViewPromotion']);
-
 Route::get('/eventos', [PromotionController::class, 'eventos']);
-Route::get('/deportes', [PromotionController::class, 'deportes']);
 Route::get('/torneos', [PromotionController::class, 'torneos']);

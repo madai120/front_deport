@@ -26,7 +26,7 @@
             <ul class="nav-links flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mt-3 mb-1">
                 <li>
                     <a class="hover:text-gray-500 font-bold text-white mb-2 flex items-center justify-center"
-                        href="/deportes">DEPORTES</a>
+                        href="/">INICIO</a>
                 </li>
                 <li>
                     <a class="hover:text-gray-500 font-bold text-white mb-2 flex items-center justify-center"
@@ -54,8 +54,8 @@
             Descarga nuestra app:
         </div>
         <a href="https://es-es.facebook.com/" class="centered-button rounded-lg overflow-hidden shadow">
-    <img src="{{ asset('images/playStore.png') }}" alt="Descargar">
-</a>
+            <img src="{{ asset('images/playStore.png') }}" alt="Descargar">
+        </a>
 
         <div class="grid grid-cols-12 gap-12">
             <div class="col-span-12 md:col-span-3">

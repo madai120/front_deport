@@ -16,11 +16,6 @@ class PromotionController extends Controller
         return view('eventos');
     }
 
-    public function deportes()
-    {
-        return view('deportes');
-    }
-
     public function torneos()
     {
         return view('torneos');

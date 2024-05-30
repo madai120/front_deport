@@ -1,34 +1,10 @@
 /* Remove background color from body to allow image to show through */
 body {
-    background-color: transparent;
+    background-color: #2EC4B6;
     margin: 0;
     /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
     padding: 0;
     /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
-}
-
-.image-container {
-    position: fixed;
-    /* Fix the image to the viewport */
-    width: 100%;
-    /* Cover the entire width */
-    height: auto;
-    /* Ajustar la altura según el contenido */
-    top: 0;
-    /* Position at the top */
-    left: 0;
-    /* Position at the left */
-    overflow: hidden;
-    /* Hide any overflowing content  */
-}
-
-.image-container img {
-    width: 100%;
-    /* Make the image responsive */
-    height: auto;
-    /* Allow image to adjust height automatically */
-    /*max-height: 100%;*/
-    /* Set maximum height to container's height */
 }
 
 header {
@@ -52,20 +28,9 @@ header {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-145%, -140%);
+    transform: translate(-175%, -250%);
     color: white;
     font-size: 5vw;
-    /* Utiliza vw para que el tamaño del texto sea relativo al ancho del viewport */
-    font-family: 'Poppins', sans-serif;
-}
-
-.centered-text {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(75%, -350%);
-    color: white;
-    font-size: 2vw;
     /* Utiliza vw para que el tamaño del texto sea relativo al ancho del viewport */
     font-family: 'Poppins', sans-serif;
 }
@@ -86,4 +51,14 @@ header {
     /* Hacer que la imagen ocupe el 100% del ancho del botón */
     height: auto;
     /* Ajustar altura automáticamente */
+}
+
+.dot-inactive {
+    background-color: #011627;
+}
+
+.dot-active {
+    background-color: #E71D36;
+    /* Dorado para el punto activo */
+    border: 2px solid #011627;
 }
