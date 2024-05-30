@@ -1,0 +1,80 @@
+/* Remove background color from body to allow image to show through */
+body {
+    background-color: #011627;
+    margin: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+    padding: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+}
+
+header {
+    position: relative;
+    /* Make header elements positioned relative to the body */
+    z-index: 10;
+    /* Set header elements above the image */
+    /* Rest of your header styles... */
+}
+
+.container,
+.custom-button {
+    /* Add styles for other elements to position them on top of the image */
+    position: relative;
+    z-index: 10;
+    /* Set these elements above the image */
+    /* Rest of your styles for container and button... */
+}
+
+.centered-titulo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-175%, -250%);
+    color: white;
+    font-size: 5vw;
+    /* Utiliza vw para que el tamaño del texto sea relativo al ancho del viewport */
+    font-family: 'Poppins', sans-serif;
+}
+
+.centered-button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(150%, -150%);
+    width: 15vw;
+    /* Ancho del botón relativo al ancho del viewport */
+    height: auto;
+    /* Ajustar altura automáticamente */
+}
+
+.centered-button img {
+    width: 100%;
+    /* Hacer que la imagen ocupe el 100% del ancho del botón */
+    height: auto;
+    /* Ajustar altura automáticamente */
+}
+
+.dot-inactive {
+    background-color: #2EC4B6;
+}
+
+.dot-active {
+    background-color: #E71D36;
+    /* Dorado para el punto activo */
+    border: 2px solid #2EC4B6;
+}
+
+.description {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
