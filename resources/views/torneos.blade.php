@@ -20,7 +20,7 @@
         <nav class="nav-links flex items-center justify-center w-full mx-auto bg-[#011627]">
             <ul class="nav-links flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8 mt-3 mb-1">
                 <li>
-                    <a class="hover:text-gray-500 font-bold text-white mb-2 flex items-center justify-center"
+                    <a class="font-bold text-white mb-2 flex items-center justify-center"
                         href="/">INICIO</a>
                 </li>
                 <li>
@@ -51,20 +51,17 @@
         <div class="relative w-full max-w-3xl h-64 md:h-80 lg:h-96 overflow-hidden">
             <div class="slide relative w-full h-full hidden">
                 <img class="w-full h-full object-cover" src="{{ asset('images/eventos/torneobasquet.jpeg') }}">
-                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de
-                        Basquetbol</b></div>
+                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de Basquetbol</b></div>
             </div>
 
             <div class="slide relative w-full h-full hidden">
                 <img class="w-full h-full object-cover" src="{{ asset('images/eventos/torneofut.jpg') }}">
-                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de
-                        Futbol</b></div>
+                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de Futbol</b></div>
             </div>
 
             <div class="slide relative w-full h-full hidden">
                 <img class="w-full h-full object-cover" src="{{ asset('images/eventos/torneovoleibol.jpeg') }}">
-                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de
-                        Voleibol</b></div>
+                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de Voleibol</b></div>
             </div>
 
             <!-- Botón anterior -->
@@ -79,24 +76,21 @@
         <!-- Descripción de los torneos -->
         <div class="description max-w-md p-5 bg-white shadow-lg rounded-md mt-8">
             <h2 class="text-2xl font-bold mb-4">Participa en Nuestros Torneos</h2>
-            <p class="text-lg text-gray-700">¡No te pierdas la oportunidad de mostrar tus habilidades y competir en
-                nuestros emocionantes torneos! Desde el baloncesto hasta el voleibol, tenemos una variedad de eventos
-                diseñados para todos los niveles.</p>
-            <p class="mt-4 text-lg text-gray-700">Inscríbete ahora y vive la emoción de la competencia, conoce nuevos
-                amigos y disfruta de un ambiente lleno de energía y deporte.</p>
+            <p class="text-lg text-gray-700">¡No te pierdas la oportunidad de mostrar tus habilidades y competir en nuestros emocionantes torneos! Desde el baloncesto hasta el voleibol, tenemos una variedad de eventos diseñados para todos los niveles.</p>
+            <p class="mt-4 text-lg text-gray-700">Inscríbete ahora y vive la emoción de la competencia, conoce nuevos amigos y disfruta de un ambiente lleno de energía y deporte.</p>
         </div>
     </div>
 
     <div class="hidden md:flex justify-center items-center space-x-5 mr-96 mt-5">
-        <!-- Los puntos de navegación -->
-        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(1)"></div>
-        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(2)"></div>
-        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(3)"></div>
-    </div>
+    <!-- Los puntos de navegación -->
+    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(1)"></div>
+    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(2)"></div>
+    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(3)"></div>
+</div>
 
-
+    
     <script src="js/welcome.js"></script>
-    <script src="js/torneos.js"></script>
+    <script src="js/eventos.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,61 @@
+#map-container {
+    height: 400px;
+    /* Puedes ajustar esta altura según tus necesidades */
+    width: 60%;
+    /* Ancho del contenedor del mapa en un 70% del ancho del contenedor padre */
+}
+
+/* Remove background color from body to allow image to show through */
+body {
+    background-color: #011627;
+    margin: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+    padding: 0;
+    /* Asegurarse de que no hay espacios entre el borde del cuerpo y los elementos */
+}
+
+header {
+    position: relative;
+    /* Make header elements positioned relative to the body */
+    z-index: 10;
+    /* Set header elements above the image */
+    /* Rest of your header styles... */
+}
+
+#texto-dinamico {
+    width: 30%;
+    float: left;
+    /* Hace que el texto se posicione a la derecha */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para la animación */
+.animated-text-container {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    /* Ajustar el ancho máximo del contenedor */
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-text-container {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
