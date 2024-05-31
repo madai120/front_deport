@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEPORTGO</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="css/torneos.css">
+    <link rel="stylesheet" href="{{ asset('css/torneos.css') }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
     <div class="flex flex-col md:flex-row justify-center items-start gap-12 mt-12 mx-auto max-w-7xl">
         <!-- Implementa el carrusel aquí -->
         <div class="relative w-full max-w-3xl h-64 md:h-80 lg:h-96 overflow-hidden">
-            <div class="slide relative w-full h-full hidden">
+            <div class="slide relative w-full h-full">
                 <img class="w-full h-full object-cover" src="{{ asset('images/eventos/torneobasquet.jpeg') }}">
                 <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white"><b>Torneo de Basquetbol</b></div>
             </div>
@@ -82,15 +82,14 @@
     </div>
 
     <div class="hidden md:flex justify-center items-center space-x-5 mr-96 mt-5">
-    <!-- Los puntos de navegación -->
-    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(1)"></div>
-    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(2)"></div>
-    <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(3)"></div>
-</div>
+        <!-- Los puntos de navegación -->
+        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(1)"></div>
+        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(2)"></div>
+        <div class="dot w-4 h-4 rounded-full cursor-pointer dot-inactive" onclick="currentSlide(3)"></div>
+    </div>
 
-    
-    <script src="js/welcome.js"></script>
-    <script src="js/eventos.js"></script>
+    <script src="{{ asset('js/welcome.js') }}"></script>
+    <script src="{{ asset('js/torneos.js') }}"></script>
 </body>
 
 </html>
